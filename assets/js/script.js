@@ -1,55 +1,13 @@
 $(document).ready(function(){
 
-	var article = $('#article');
-	cacher = $('#cacher'); afficher = $('#afficher');
+	var img = $('#img');
+	width = img.width();
+	height = img.height();
+	console.log('Width : '+width+' heigh : '+height);
 
-	/*
-	$(cacher).on('click', function(){
-		$(article).hide();
-		$(this).hide();
-		$(afficher).show();
+	$('#modif').on('click', function(){
+		$(img).width(300).height(200);
 	});
-
-	$(afficher).on('click', function(){
-		$(article).show();
-		$(this).hide();
-		$(cacher).show();
-	});
-*/
-
-	/*
-	$(cacher).on('click', function(){
-		$(article).fadeOut(2000);
-		$(this).hide();
-		$(afficher).show();
-	});
-
-	$(afficher).on('click', function(){
-		$(article).fadeIn(500);
-		$(this).hide();
-		$(cacher).show();
-	});
-*/
-	
-	/*
-	$(cacher).on('click', function(){
-		$(article).slideUp(2000);
-		$(this).hide();
-		$(afficher).show();
-	});
-
-	$(afficher).on('click', function(){
-		$(article).slideDown();
-		$(this).hide();
-		$(cacher).show();
-	});
-*/
-
-	$(cacher).on('click', function(){
-		$(article).slideToggle('fast');
-	});
-
-
 });
 
 
